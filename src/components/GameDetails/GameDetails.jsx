@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import detailStyle from './GameDetails.module.css';
 import { useFetch } from '../../hooks/useFetch';
 import { useNavigate, useParams } from 'react-router-dom';
+import Loader from '../Loader/Loader';
 
 
 
@@ -38,7 +39,7 @@ const GameDetails = () => {
 
     const {data, error, loading}= useFetch(`https://free-to-play-games-database.p.rapidapi.com/api/game?id=${id}`)
 
-
+    
     
     if(!data) return
 
@@ -53,7 +54,8 @@ const GameDetails = () => {
 
 
   return (
-    <div className={detailStyle.GameDetails}>
+      <div className={detailStyle.GameDetails}>
+        {loading && <Loader/> }
         <div className={detailStyle.GameDetails__btn}>
             <button onClick={handleGoBack}><i className="fa-solid fa-arrow-left fa-2xl" style={{color:'#8a2be2'}}></i></button>
         </div>

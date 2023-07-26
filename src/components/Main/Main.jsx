@@ -96,7 +96,6 @@ const Main = () => {
             <button onClick={()=> setCurrentPage(currentPage + 1)} disabled={currentItems.length < itemsPerPage}><i className="fa-solid fa-arrow-right fa-2xl" style={{color:'#8a2be2'}}></i></button>
           </div>
         </div>
-        <Loader/>
     </div>
   )
 }
