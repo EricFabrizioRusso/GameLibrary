@@ -1,0 +1,28 @@
+.boxGames{
+
+    margin: .5em;
+    filter: brightness(.8);
+    transition: all .3s ease-in-out;
+
+}
+.boxGames:hover{
+
+    filter: brightness(1);
+    transform: scale(1.03);
+
+}
+
+
+
+
+@media screen and (max-width:700px){
+
+    .boxGames{
+     
+        margin: .5em 0;
+    }
+
+
+
+    
+}

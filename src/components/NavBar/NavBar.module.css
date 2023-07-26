@@ -1,0 +1,50 @@
+.navBar{
+
+    grid-area: nav;
+    width: 250px;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0, .5);
+    position: fixed;
+    z-index: 2;
+
+
+
+
+     transform: translate(-100%);
+     transition: all .3s ease-in-out;
+
+
+    
+
+}
+
+.navBar__link{
+
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    transition: all .3s ease-in-out;
+ 
+}
+
+.navBar__link:hover{
+
+    color: blueviolet;
+    
+}
+
+.link__li{
+
+    margin: 2em .5em;
+   
+
+}
+
+.link__li > i{
+
+    margin: 0 .5em;
+
+}

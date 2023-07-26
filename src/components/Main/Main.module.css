@@ -1,0 +1,71 @@
+.main{
+    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+.main__btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 100%;
+
+}
+
+.btn__left, .btn__right{
+
+    width: 50px;
+    height: 50px;
+    background: #000;
+    margin: 0 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+
+    transition: all .3s ease-in-out;
+
+}
+
+.btn__left:hover, .btn__right:hover{
+
+    background: #fff;
+    transform: scale(1.1);
+
+}
+.btn__left > button, .btn__right > button{
+
+    background: none;
+    border: none;
+
+}
+
+
+
+@media screen and (max-width:700px){
+
+    .btn__left, .btn__right{
+
+      width: 50px;
+      height: 50px;
+      margin: auto;
+
+    
+    }
+
+
+    
+
+    
+    
+
+    
+}
+
+
