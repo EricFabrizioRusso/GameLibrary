@@ -60,7 +60,7 @@ const GameDetails = () => {
             <button onClick={handleGoBack}><i className="fa-solid fa-arrow-left fa-2xl" style={{color:'#8a2be2'}}></i></button>
         </div>
         <div className={detailStyle.GameDetails__image}>
-            <img src={data.thumbnail} alt={data.id} className={detailStyle.image__img} />
+            <img src={data.thumbnail} alt={data.id} className={detailStyle.image__img} loading="lazy" />
         </div>
             <h2 className={detailStyle.GameDetails__title}>{data.title}</h2>
         <div className={detailStyle.GameDetails__desc}>
@@ -76,7 +76,7 @@ const GameDetails = () => {
         <div className={detailStyle.GameDetails__screenshots}>
             {
                 data.screenshots.map((el,index)=>(
-                    <img onClick={handleZoom} src={el.image} key={index}></img>
+                    <img onClick={handleZoom} src={el.image} key={index} loading="lazy"></img>
                 ))
             }
         </div>

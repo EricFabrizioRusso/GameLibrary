@@ -8,7 +8,7 @@ const BoxGames = ({id,thumbnail}) => {
   return (
     <div className={boxStyle.boxGames}>
       <Link to={`/game/${id}`}>
-        <img className={boxStyle.boxGames__img} src={thumbnail} alt={id} />
+        <img className={boxStyle.boxGames__img} src={thumbnail} alt={id} loading="lazy" />
       </Link>
     </div>
   )
